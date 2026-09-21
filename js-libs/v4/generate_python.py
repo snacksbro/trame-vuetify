@@ -6,7 +6,7 @@ import re
 import sys
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent
+BASE_DIR = Path(__file__).parent.parent.parent
 DEST_FILE = BASE_DIR / Path("trame_vuetify/widgets/vuetify4.py")
 INPUT_JSON = BASE_DIR / Path("js-libs/v4/web-types.json")
 HEADER_FILE = Path(__file__).with_name(".header.py")
