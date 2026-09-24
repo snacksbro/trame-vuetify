@@ -20,18 +20,19 @@ class HtmlElement(AbstractElement):
         super().__init__(_elem_name, children, **kwargs)
         if self.server:
             if USE_LAB:
-                from trame_vuetify.module import vue3_lab
+                from trame_vuetify.module import v4_lab
 
-                self.server.enable_module(vue3_lab)
+                self.server.enable_module(v4_lab)
             else:
-                from trame_vuetify.module import vue3
+                from trame_vuetify.module import v4
 
-                self.server.enable_module(vue3)
+                self.server.enable_module(v4)
 
 
 try:
-    import numpy as np
     from numbers import Number
+
+    import numpy as np
 except Exception:
     # dataframe_to_grid won't work
     pass
