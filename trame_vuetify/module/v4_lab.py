@@ -26,5 +26,5 @@ def setup(server, **kargs):
 
     if client_type != "vue3":
         raise TypeError(
-            f"Server using client_type='{client_type}' while we expect 'vue4'"
+            f"Server using client_type='{client_type}' while we expect 'vue3'"
         )
