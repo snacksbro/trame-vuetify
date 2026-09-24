@@ -290,9 +290,7 @@ class {class_name}(HtmlElement):{docs}
             "##########################################################\n"
         )
         vuetify_module.write("# DO NOT EDIT: GENERATED FILE\n")
-        vuetify_module.write(
-            "# => instead run: $ROOT/vue-components/generate_python.py\n"
-        )
+        vuetify_module.write("# => instead run: $ROOT/js-libs/v3/generate_python.py\n")
         vuetify_module.write(
             "##########################################################\n\n"
         )
